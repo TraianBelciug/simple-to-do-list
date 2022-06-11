@@ -46,7 +46,7 @@ document.querySelector("#mark").addEventListener("click", function () {
   let bttn = document.querySelectorAll(".toggleStatus");
   for (let i = 0; i < bttn.length; i++) {
     if (bttn[i].parentElement.classList == 0) {
-      bttn[i].parentElement.classList.add("done");
+      bttn[i].parentElement.classList.toggle("done");
       bttn[i].innerText = "not done";
     }
   }
